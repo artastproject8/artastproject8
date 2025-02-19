@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtAst Telegram Bot</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background-color: #181818; color: white; }
+        .container { margin-top: 50px; }
+        img { width: 100px; border-radius: 10px; }
+        button { display: block; margin: 10px auto; padding: 10px 20px; font-size: 18px; border: none; cursor: pointer; background-color: #f4a261; color: white; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src=" https://disk.yandex.ru/i/ClsqbrPRy56BFA" alt="ArtAst Logo">
+        <h1>Добро пожаловать в ArtAst</h1>
+        <button onclick="openLink('people')">Люди</button>
+        <button onclick="openLink('spaces')">Пространства</button>
+        <button onclick="openLink('events')">События</button>
+        <button onclick="openLink('apply')">Подать заявку</button>
+    </div>
+
+    <script>
+        function openLink(section) {
+            const links = {
+                people: "https://t.me/ArtAstPeopleBot=people",
+                spaces: "https://t.me/ArtAstPeopleBot=spaces",
+                events: "https://t.me/ArtAstPeopleBot=events",
+                apply: "https://t.me/ArtAstPeopleBot=apply"
+            };
+            window.location.href = links[section];
+        }
+    </script>
+</body>
+</html>
